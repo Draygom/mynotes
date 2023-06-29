@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430158491297",
+    "project_id": "mynotes-c01",
+    "storage_bucket": "mynotes-c01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430158491297:android:a4c8aea59f27c69167cae0",
+        "android_client_info": {
+          "package_name": "com.draygom.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430158491297-fad941td77bt8okf8f0bk4iq0pt5f98i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY64j7k6JITjVRT0BiccRwZP63Wba6XMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430158491297-fad941td77bt8okf8f0bk4iq0pt5f98i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
