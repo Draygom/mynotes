@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:mynotes/constants/routes.dart';
 import 'package:mynotes/services/auth/auth_exceptions.dart';
 import 'package:mynotes/services/auth/auth_service.dart';
@@ -68,12 +67,12 @@ class _RegisterViewState extends State<RegisterView> {
               } on WeakPasswordAuthException {
                 await showErrorDialog(
                   context,
-                  'Weake password',
+                  'Weak password',
                 );
               } on EmailAlreadyInUseAuthException {
                 await showErrorDialog(
                   context,
-                  'Weake password',
+                  'E-mail already in use',
                 );
               } on InvalidEmailAuthException {
                 await showErrorDialog(

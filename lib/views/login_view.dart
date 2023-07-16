@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:mynotes/constants/routes.dart';
 import 'package:mynotes/services/auth/auth_exceptions.dart';
 import 'package:mynotes/services/auth/auth_service.dart';
@@ -82,7 +81,7 @@ class _LoginViewState extends State<LoginView> {
                   context,
                   'User not found',
                 );
-              } on WhrongPasswordAuthException {
+              } on WrongPasswordAuthException {
                 await showErrorDialog(
                   context,
                   'Wrong password',

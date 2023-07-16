@@ -131,7 +131,7 @@ class NotesService {
     await _ensureDbIsOpen();
     final db = _getDataOrThrow();
 
-    //make sure owner existis in database with the correct id
+    //make sure owner exists in database with the correct id
     final dbUser = await getUser(email: owner.email);
     if (dbUser != owner) {
       throw CouldNotFindUser();
@@ -189,7 +189,7 @@ class NotesService {
     );
 
     if (results.isNotEmpty) {
-      throw UserAlreadyExistis();
+      throw UserAlreadyExists();
     }
 
     final userId = await db.insert(

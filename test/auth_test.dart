@@ -40,7 +40,7 @@ void main() {
       );
       expect(
         badPasswordUser,
-        throwsA(const TypeMatcher<WhrongPasswordAuthException>()),
+        throwsA(const TypeMatcher<WrongPasswordAuthException>()),
       );
 
       final user = await provider.createUser(
@@ -104,7 +104,7 @@ class MockAuthProvider implements AuthProvider {
   }) {
     if (!isInitialized) throw NotInicializedException();
     if (email == 'pedro@email.com') throw UserNotFoundAuthException();
-    if (password == 'test1234') throw WhrongPasswordAuthException();
+    if (password == 'test1234') throw WrongPasswordAuthException();
     const user = AuthUser(
       isEmailVerified: false,
       email: 'pedro@pedro.com',
