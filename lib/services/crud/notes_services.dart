@@ -58,6 +58,8 @@ class NotesService {
         textColumn: text,
         isSyncWithCloudColumn: 0,
       },
+      where: 'id = ?',
+      whereArgs: [note.id],
     );
 
     if (updatesCount == 0) {
